@@ -1,5 +1,5 @@
 services:
-  # 1. Backend REST API Service
+  # 1. Backend REST API Service (v1.0.1)
   - type: web
     name: pulseflow-backend
     env: node
