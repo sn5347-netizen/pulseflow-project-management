@@ -3,12 +3,14 @@ import { storage } from './storage';
 
 // In Android emulator, 10.0.2.2 maps to the host machine's localhost
 // In Web / iOS, localhost works. User can also override to their Wi-Fi LAN IP (e.g. 192.168.1.50)
+const DEPLOYED_HOST = 'https://pulseflow-backend-mr0f.onrender.com/api';
+
 const DEFAULT_HOST = Platform.select({
   android: 'http://10.0.2.2:5000/api',
   ios: 'http://localhost:5000/api',
   web: 'http://localhost:5000/api',
-  default: 'http://localhost:5000/api',
-}) || 'http://localhost:5000/api';
+  default: DEPLOYED_HOST,
+}) || DEPLOYED_HOST;
 
 let currentBaseUrl = DEFAULT_HOST;
 let authExpiredCallback: ((msg: string) => void) | null = null;
