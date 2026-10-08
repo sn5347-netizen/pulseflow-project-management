@@ -23,8 +23,9 @@ services:
           property: connectionString
 
   # 2. Web Frontend Application (SPA)
-  - type: static_site
+  - type: web
     name: pulseflow-web
+    env: static
     rootDir: web
     buildCommand: npm install && npm run build
     staticPublishPath: dist
@@ -37,4 +38,3 @@ services:
 databases:
   - name: pulseflow-db
     plan: free
-
