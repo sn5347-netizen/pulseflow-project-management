@@ -1,0 +1,26 @@
+{
+  "name": "pulseflow-project-management",
+  "version": "1.0.0",
+  "description": "PulseFlow - Full Stack Project Management System (Web + Mobile + Backend)",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:web": "npm --prefix web run dev",
+    "dev:mobile": "npm --prefix mobile run start",
+    "build:backend": "npm --prefix backend run build",
+    "build:web": "npm --prefix web run build",
+    "test:backend": "npm --prefix backend test"
+  },
+  "keywords": [
+    "project-management",
+    "full-stack",
+    "express",
+    "react",
+    "react-native",
+    "expo",
+    "prisma"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
