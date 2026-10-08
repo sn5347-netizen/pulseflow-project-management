@@ -37,3 +37,4 @@ services:
 databases:
   - name: pulseflow-db
     plan: free
+
