@@ -1,5 +1,5 @@
 services:
-  # 1. Backend REST API Service (100% Free Plan, No Credit Card Required)
+  # 1. Backend REST API Service
   - type: web
     name: pulseflow-backend
     env: node
@@ -10,8 +10,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 5000
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRES_IN
@@ -21,7 +19,7 @@ services:
       - key: DATABASE_URL
         value: "file:./dev.db"
 
-  # 2. Web Frontend Application (100% Free Plan, No Credit Card Required)
+  # 2. Web Frontend Application (SPA)
   - type: web
     name: pulseflow-web
     env: static
