@@ -305,3 +305,4 @@ To demonstrate cross-platform synchronization:
 4. Perform **Pull-to-Refresh** on Mobile: the new task appears instantly.
 5. Tap the checkbox on Mobile to mark it **Completed**.
 6. Refresh the Web dashboard: total completed tasks increments and velocity progress bar updates in real time!
+

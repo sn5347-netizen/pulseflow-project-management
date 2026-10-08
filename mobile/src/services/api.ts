@@ -6,8 +6,9 @@ import { storage } from './storage';
 const DEFAULT_HOST = Platform.select({
   android: 'http://10.0.2.2:5000/api',
   ios: 'http://localhost:5000/api',
+  web: 'http://localhost:5000/api',
   default: 'http://localhost:5000/api',
-});
+}) || 'http://localhost:5000/api';
 
 let currentBaseUrl = DEFAULT_HOST;
 let authExpiredCallback: ((msg: string) => void) | null = null;

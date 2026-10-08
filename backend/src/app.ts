@@ -23,7 +23,7 @@ export const createApp = (): Express => {
   // CORS configuration
   app.use(
     cors({
-      origin: config.corsOrigin === '*' ? true : [config.corsOrigin, 'http://localhost:3000', 'http://127.0.0.1:3000', 'exp://*'],
+      origin: true, // Allow web (3000), mobile preview (8081), and any client in dev
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization'],
